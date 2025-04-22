@@ -1,12 +1,16 @@
-print("\nWhile:")
-i=3
-while i!=0:
-    print("meow")
-    i -=1
+def main():
+    number = getnumber()
+    meow(number)
 
-print("\nFor:")
-for _ in range (10):
-    print("meow")
+def getnumber():
+    while True:
+        n = int(input("enter number: "))
+        if n>0:
+            return n
+        else:
+            continue
 
-print("\nusing print")
-print("meow\n" *3, end="")
+def meow(n):
+    print("meow\n"*n , end="")
+
+main()
