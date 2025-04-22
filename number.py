@@ -5,10 +5,8 @@ def main():
 def get_int():
     while True:
         try:
-            number = int(input("enter x: "))
+            return int(input("enter x: "))
         except:
             print("number is not integer")
-        else:
-            return number
 
 main()
