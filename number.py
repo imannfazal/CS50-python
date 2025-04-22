@@ -7,6 +7,7 @@ def get_int():
         try:
             return int(input("enter x: "))
         except:
-            print("number is not integer")
+            # print("number is not integer")
+            pass
 
 main()
