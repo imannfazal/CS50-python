@@ -1,11 +1,11 @@
 def main():
-    int = get_int()
+    int = get_int("What's x? ")
     print(f"x is {int}")
 
-def get_int():
+def get_int(prompt):
     while True:
         try:
-            return int(input("enter x: "))
+            return int(input(prompt))
         except:
             # print("number is not integer")
             pass
