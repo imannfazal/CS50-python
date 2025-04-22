@@ -1,9 +1,14 @@
-while True:
-    try:
-        number = int(input("enter x: "))
-    except:
-        print("number is not integer")
-    else:
-        break
+def main():
+    int = get_int()
+    print(f"x is {int}")
 
-print(f"x is {number}")
+def get_int():
+    while True:
+        try:
+            number = int(input("enter x: "))
+        except:
+            print("number is not integer")
+        else:
+            return number
+
+main()
