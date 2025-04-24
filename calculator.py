@@ -1,3 +1,6 @@
+import random
+
+
 while True:
     try:
         x= int(input("Enter x: "))
@@ -14,3 +17,4 @@ while True:
     else:
         break
 print(x+y)
+print(random.choice([10,50,20,45]))
