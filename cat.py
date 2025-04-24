@@ -13,4 +13,5 @@ def getnumber():
 def meow(n):
     print("meow\n"*n , end="")
 
-main()
+if __name__ == "__main__":
+    main()
