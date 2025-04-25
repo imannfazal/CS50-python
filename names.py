@@ -1,9 +1,5 @@
-names = []
+file = open("Names.txt", "r")
+for name in file:
+    print(name, end="")
 
-for _ in range(4):
-    names.append(input("What's your name? "))
-
-print(names)
-
-for name in sorted(names):
-    print("Hello, "+ name)
+file.close()
