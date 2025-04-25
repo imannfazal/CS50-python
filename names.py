@@ -1,5 +1,6 @@
 file = open("Names.txt", "r")
 for name in file:
-    print(name, end="")
+    if len(name)==7:
+        print(name, end="")
 
 file.close()
