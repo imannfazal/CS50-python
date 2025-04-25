@@ -1,6 +1,8 @@
-file = open("Names.txt", "r")
-for name in file:
+with open("Names.txt", "r") as file:
+    names = file.readlines()
+
+for name in names:
     if len(name)==7:
         print(name, end="")
 
-file.close()
+
