@@ -11,7 +11,7 @@ def get_student():
     # making object of Student class "student"
     name = input("Name: ")
     house = input("House: ")
-    student = Student(name, house)
+    return Student(name, house)
 
 if __name__ == "__main__":
     main()
