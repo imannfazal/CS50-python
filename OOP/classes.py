@@ -4,10 +4,12 @@ class Student:
             raise ValueError("Name not entered!")
         self.name = name
         self.house = house
+    def __str__(self):
+        return(f"{self.name} from {self.house}")
 
 def main():
     student = get_student()
-    print(f"{student.name} is in {student.house}")
+    print(student)
 
 def get_student():
     # making object of Student class "student"
