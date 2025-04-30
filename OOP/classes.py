@@ -6,6 +6,7 @@ def main():
     print(f"{student.name} is in {student.house}")
 
 def get_student():
+    # making object of Student class "student"
     student = Student()
     student.name = input("Name: ")
     student.house = input("House: ")
