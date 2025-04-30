@@ -1,4 +1,11 @@
-name = input("whats the name? ")
-house = input("whats the house? ")
+def main():
+    student = get_student()
+    print(f"{student[0]} is from {student[1]}")
 
-print(f"{name} is from {house}")
+def get_student():
+    name =  input("whats the name? ")
+    house = input("whats the house? ")
+    return (name, house)
+
+if __name__ == "__main__":
+    main()
