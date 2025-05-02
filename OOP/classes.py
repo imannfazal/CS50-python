@@ -1,12 +1,20 @@
 class Student:
-    def __init__(self, name, house):
-        if not name:
-            raise ValueError("Name not entered!")
+    def __init__(self, name, house):  
         self.name = name
         self.house = house
         # self.patronus = patronus
     def __str__(self):
         return(f"{self.name} from {self.house}")
+
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, name):
+        if not name:
+            raise ValueError("Name not entered!")
+        self._name = name
 
     # getter
     @property
