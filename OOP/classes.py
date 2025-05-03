@@ -46,7 +46,6 @@ def get_student():
     # making object of Student class "student"
     name = input("Name: ")
     house = input("House: ")
-    # charm = input("Charm: ")
     return Student(name, house)
 
 if __name__ == "__main__":
