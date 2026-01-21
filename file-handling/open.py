@@ -1,0 +1,1 @@
+file = open("students.csv", "w")
