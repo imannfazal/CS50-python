@@ -1,4 +1,4 @@
-# file = open("demofile.txt", "rt")
+# file = open("emofile.txt", "rt")
 # print(file.read())
 
 with open("demofile.txt", "rt") as f:
